@@ -1,0 +1,19 @@
+{
+  "name": "jp-job-form-autofill",
+  "version": "1.0.0",
+  "description": "JP Job Form Autofill (Local) - Chrome extension for personal job form autofill.",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:icons && rm -rf dist && tsc && cp -r public/* dist/",
+    "build:icons": "node scripts/generate-icons.mjs",
+    "clean": "rm -rf dist public/icons/*.png",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "chrome-extension",
+    "autofill",
+    "jp-jobs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

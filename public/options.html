@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JP Job Form Autofill Settings</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        margin: 16px;
+        max-width: 720px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 240px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 13px;
+        padding: 8px;
+      }
+      button {
+        padding: 8px 12px;
+        margin-right: 6px;
+        margin-top: 6px;
+      }
+      #preview ul {
+        padding-left: 18px;
+      }
+      #status {
+        margin-top: 8px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JP Job Form Autofill</h1>
+    <p>Store and edit your personal profile. JSON is validated before saving.</p>
+    <textarea id="profileJson"></textarea>
+    <div>
+      <button id="saveProfile">Save profile</button>
+      <button id="resetProfile">Reset to sample</button>
+      <button id="resetMappings">Reset saved mappings</button>
+    </div>
+    <div id="status"></div>
+    <div id="preview"></div>
+    <script type="module" src="ui/options.js"></script>
+  </body>
+</html>

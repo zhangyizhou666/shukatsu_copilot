@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JP Job Form Autofill</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        margin: 12px;
+        min-width: 260px;
+      }
+      .row {
+        margin-bottom: 8px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+      }
+      button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 6px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      #status {
+        margin-top: 8px;
+        min-height: 18px;
+        font-size: 12px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>JP Job Form Autofill</h2>
+    <div class="row">
+      <label><input type="checkbox" id="teachMode" /> Teach mode</label>
+      <label><input type="checkbox" id="allowAutoCheck" /> Allow auto-check consent boxes</label>
+      <label><input type="checkbox" id="dryRun" /> Dry run only</label>
+    </div>
+    <button id="fillButton">Fill this page</button>
+    <button id="dryRunButton">Dry run</button>
+    <div id="status"></div>
+    <script type="module" src="ui/popup.js"></script>
+  </body>
+</html>
