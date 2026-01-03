@@ -19,7 +19,7 @@ Personal Chrome extension (Manifest V3) that keeps your job-hunting profile full
 npm run build
 ```
 This compiles TypeScript to `dist/` and copies static assets (manifest, HTML, icons).
-- Icons are generated at build time (no binary assets are tracked in git). You can run `npm run build:icons` separately if needed.
+- Icons are already checked in under `public/icons/`; no separate generation step is required.
 
 ### Load the unpacked extension
 1. Run the build command above.
